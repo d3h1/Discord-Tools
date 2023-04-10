@@ -36,8 +36,8 @@ const Post = ({ name, timestamp, text }) => {
     // Avatar picture will be randomized based on the seed and randomized on the link being drawn from
     const seed = Math.round(Math.random() * 100);
     return (
-        <div className=''>
-            <div className=''>
+        <div className={'post'}>
+            <div className='avatar-wrapper'>
                 <img src={`https://avatars.dicebear.com/api/open-peeps/${seed}.svg`} alt='' className='avatar' />
             </div>
 
