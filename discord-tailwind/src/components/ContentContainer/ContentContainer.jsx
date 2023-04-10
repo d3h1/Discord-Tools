@@ -1,4 +1,4 @@
-import TopNav from '../TopNav';
+import TopNav from '../TopNav/TopNav';
 import { BsPlusCircleFill } from 'react-icons/bs';
 
 const ContentContainer = () => {

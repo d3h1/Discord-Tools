@@ -23,7 +23,7 @@ const ChannelBar = () => {
 };
 
 // Dropdown menu -- Header | Selection
-const Dropdown = ({ header, selection }) => {
+const Dropdown = ({ header, selections }) => {
     const [expanded, setExpanded] = useState(true);
 
     return (
@@ -37,8 +37,8 @@ const Dropdown = ({ header, selection }) => {
                 <FaPlus size='12' className="text-accent text-opacity-80 my-auto ml-auto" />
             </div>
             {expanded && 
-                selection &&
-                selection.map((selections) => <TopicSelection selection={selection} />)}
+                selections &&
+                selections.map((selection) => <TopicSelection selection={selection} />)}
         </div>
     );
 };
@@ -54,12 +54,12 @@ const ChevronIcon = ({ expanded }) => {
 };
 
 // Menu will allow you to select one of the topics
-const TopicSelection = ({ selection }) => {
+const TopicSelection = ({ selection }) => (
     <div className="dropdown-selection">
-        <BsHash className="text-gray-400" size='24'/>
+        <BsHash size='24' className="text-gray-400"/>
         <h5 className="dropdown-selection-text">{selection}</h5>
     </div>
-};
+);
 
 // Channels will have to be put into blocks -- styles by the css
 const ChannelBlock = () => (
