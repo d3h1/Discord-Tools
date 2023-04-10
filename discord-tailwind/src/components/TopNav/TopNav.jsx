@@ -3,7 +3,7 @@ import DarkMode from '../../hooks/DarkMode';
 
 const TopNav = () => {
     return (
-        <div >
+        <div className='top-navigation'>
             <HashtagIcon />
             <Title />
             <ThemeIcon />
